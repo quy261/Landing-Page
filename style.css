@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 15px;
+}
+
+.lager-text {
+  font-size: 14px;
+}
+
+.normal-text {
+  font-size: 12px;
+}
+
+.smaller-text {
+  font-size: 8px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  
+  /* bo viền logo thanh toán điện tử */
+  .pay-img {
+    border-radius: 5px;
+  }
+}
+
+img + img {
+  margin-left: 5%;
+}
+
+.equal-size-image {
+  width: 25px;
+  height: 25px;
+}
+
+.wrap {
+  max-width: 1920px;
+  background-color: #cae3ff;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 5px;
+  position: relative;
+
+  /* .owl-carousel .owl-item {
+    position: relative;
+  } */
+
+  .owl-carousel .owl-item img {
+    opacity: 0.5; /* Đặt opacity cho ảnh ở bên trái và bên phải */
+    transition: opacity 0.3s ease;
+  }
+
+  .owl-carousel .owl-item.active.center img {
+    opacity: 1; /* Đặt opacity cho ảnh ở giữa */
+  }
+
+  .btn {
+    font-size: 18px;
+    color: white;
+    padding: 1%;
+    background-color: #0d56a5;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 20px auto;
+  }
+  .block {
+    width: 41%;
+    margin: 20px auto;
+    display: flex;
+    .block__1 {
+      width: 159px;
+      height: 50px;
+      text-align: center;
+      font-weight: bolder;
+      padding: 5%;
+      margin-right: 4px;
+      color: white;
+      background-color: #0d56a5;
+      font-size: 17px;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .block__child {
+      width: 165px;
+      height: 60px;
+      margin-left: 3px;
+      box-sizing: border-box;
+      .block__child1 {
+        margin-bottom: 2%;
+        color: #0d56a5;
+        font-weight: bold;
+      }
+    }
+  }
+}
